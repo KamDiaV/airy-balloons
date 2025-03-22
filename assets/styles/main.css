@@ -66,11 +66,79 @@ h6 {
   font-weight: 600;
   font-style: normal;
 }
+/* Пример шаблона базового стиля кнопки */
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  /* Используем Montserrat с весом 600 (Semibold) */
+  font-size: 16px;
+  width: 240px;
+  height: 60px;
+  background-color: rgb(255, 255, 255); /* Белый фон */
+  color: rgb(238, 27, 85); /* Текст красного цвета */
+  border: 1px solid rgb(238, 27, 85); /* Красная рамка толщиной 1px */
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Состояние при наведении */
+  /* Состояние при нажатии/активное */
+  /* Отключённая кнопка */
+  /* Адаптив */
+}
+.btn:hover {
+  background-color: #c70f42; /* затемняем фон на 10% */
+  color: rgb(255, 255, 255); /* делаем текст белым для контраста */
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:disabled, .btn.disabled {
+  background-color: #f57a9c;
+  border-color: #f57a9c;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .btn {
+    padding: 8px 16px;
+  }
+}
+
+/* Пример SCSS-кода с адаптивом, используя миксины tablets и phones */
 /* Основной контейнер */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .container {
+    padding: 8px;
+  }
+}
+
+.breadcrumbs ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+@media screen and (max-width: 440px) {
+  .breadcrumbs ul {
+    flex-direction: column;
+    gap: 4px;
+  }
 }
 
 /* Секция карточки товара */
@@ -79,6 +147,12 @@ h6 {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .product-card {
+    /* при ширине до 768px всё будет в один столбец */
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Изображение товара */
@@ -94,6 +168,16 @@ h6 {
   width: 100%;
   max-width: 400px;
   border-radius: 8px;
+}
+@media screen and (max-width: 768px) {
+  .product-images img {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .product-images img {
+    max-width: 100%;
+  }
 }
 
 /* Блок информации о товаре */
@@ -111,6 +195,16 @@ h6 {
   font-weight: bold;
   color: rgb(30, 26, 26);
 }
+@media screen and (max-width: 768px) {
+  .product-info .product-title {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .product-info .product-title {
+    font-size: 1.4rem;
+  }
+}
 .product-info .price-block {
   display: flex;
   align-items: baseline;
@@ -127,6 +221,16 @@ h6 {
   color: rgb(238, 27, 85);
   font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+  .product-info .price-block .product-price {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .product-info .price-block .product-price {
+    font-size: 1.4rem;
+  }
+}
 .product-info .price-block .discount {
   color: rgb(238, 27, 85);
   font-weight: bold;
@@ -139,6 +243,16 @@ h6 {
 }
 .product-info .composition span {
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .product-info .composition {
+    font-size: 0.95rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .product-info .composition {
+    font-size: 0.9rem;
+  }
 }
 .product-info .buy-button {
   background-color: rgb(238, 27, 85);
@@ -154,4 +268,18 @@ h6 {
 }
 .product-info .buy-button:hover {
   background-color: rgb(200, 20, 60);
+}
+@media screen and (max-width: 768px) {
+  .product-info .buy-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    max-width: 180px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .product-info .buy-button {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+    max-width: 160px;
+  }
 }

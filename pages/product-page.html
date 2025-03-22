@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Композиция шаров на день рождения</title>
   <link rel="stylesheet" href="../assets/styles/main.css" />
 </head>
@@ -11,10 +12,23 @@
   <!-- Основная часть страницы -->
   <main>
     <div class="container">
+
+      <!-- Блок хлебных крошек -->
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <ul>
+          <li><a href="/">Главная</a></li>
+          <li><a href="./catalog.html">Каталог</a></li>
+          <li aria-current="page">Композиция шаров на день рождения</li>
+        </ul>
+      </nav>
+
       <div class="product-card">
         <!-- Изображение товара -->
         <div class="product-images">
-          <img src="../assets/photos/for-girl/for-girl-01.jpeg" alt="Композиция шаров на день рождения для девочки" />
+          <img 
+            src="../assets/photos/for-girl/for-girl-01.jpeg" 
+            alt="Композиция шаров на день рождения для девочки" 
+          />
         </div>
 
         <!-- Информация о товаре -->
@@ -31,7 +45,7 @@
             <span>Состав:</span> Шар латексный — 2&nbsp;шт, Шар 3D&nbsp;— 1&nbsp;шт
           </p>
 
-          <button class="buy-button">В корзину</button>
+          <button class="btn">В корзину</button>
         </div>
       </div>
     </div>

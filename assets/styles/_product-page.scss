@@ -1,8 +1,29 @@
+/* Пример SCSS-кода с адаптивом, используя миксины tablets и phones */
+
 /* Основной контейнер */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+
+  @include tablets {
+    padding: 16px;
+  }
+
+  @include phones {
+    padding: 8px;
+  }
+}
+
+.breadcrumbs ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+
+  @include phones {
+    flex-direction: column;
+    gap: 4px;
+  }
 }
 
 /* Секция карточки товара */
@@ -11,6 +32,11 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: flex-start;
+
+  @include tablets {
+    /* при ширине до 768px всё будет в один столбец */
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Изображение товара */
@@ -26,6 +52,14 @@
     width: 100%;
     max-width: 400px;
     border-radius: 8px;
+
+    @include tablets {
+      max-width: 300px;
+    }
+
+    @include phones {
+      max-width: 100%;
+    }
   }
 }
 
@@ -40,6 +74,14 @@
     margin-bottom: 16px;
     font-weight: bold;
     color: $black;
+
+    @include tablets {
+      font-size: 1.6rem;
+    }
+
+    @include phones {
+      font-size: 1.4rem;
+    }
   }
 
   /* Блок цены со старой ценой и скидкой */
@@ -59,6 +101,14 @@
       font-size: 1.8rem;
       color: $red;
       font-weight: bold;
+
+      @include tablets {
+        font-size: 1.6rem;
+      }
+
+      @include phones {
+        font-size: 1.4rem;
+      }
     }
 
     .discount {
@@ -77,6 +127,14 @@
     span {
       font-weight: bold;
     }
+
+    @include tablets {
+      font-size: 0.95rem;
+    }
+
+    @include phones {
+      font-size: 0.9rem;
+    }
   }
 
   /* Кнопка */
@@ -94,6 +152,18 @@
 
     &:hover {
       background-color: rgb(200, 20, 60);
+    }
+
+    @include tablets {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+      max-width: 180px;
+    }
+
+    @include phones {
+      font-size: 0.85rem;
+      padding: 8px 16px;
+      max-width: 160px;
     }
   }
 }
