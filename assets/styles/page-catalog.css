@@ -1,0 +1,22 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.image-container {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  border-radius: 8px;
+  width: 180px;
+  height: 200px;
+}
+section {
+  display: flex;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
