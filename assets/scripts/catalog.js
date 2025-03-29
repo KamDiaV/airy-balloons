@@ -1,20 +1,21 @@
 // Находим контейнер каталога
-const catalogEl = document.getElementById('catalog');
+const catalogEl = document.getElementById("catalog");
 
 // Функция для рендера списка товаров
 function renderCatalog() {
   // Очищаем контейнер каталога
-  catalogEl.innerHTML = '';
+  catalogEl.innerHTML = "";
 
   products.forEach((product) => {
     // Создаём обёртку для карточки
-    const itemEl = document.createElement('div');
-    itemEl.classList.add('catalog-item');
+    const itemEl = document.createElement("div");
+    itemEl.classList.add("catalog-item");
 
     // Определяем главное изображение
-    const mainImage = (product.images && product.images.length > 0)
-      ? product.images[0]
-      : 'assets/images/no-image.jpg';
+    const mainImage =
+      product.images && product.images.length > 0
+        ? product.images[0]
+        : "assets/images/no-image.jpg";
 
     // Формируем HTML карточки
     itemEl.innerHTML = `
