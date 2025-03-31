@@ -1,0 +1,8 @@
+.loupe{
+    width: 36px;
+}
+@media (min-width: 768px){
+    .loupe{
+        display: none;
+    }
+}
