@@ -23,6 +23,7 @@
   top: 157px;         // отступ от верха, чтобы не перекрывать шапку
   left: 10%;          // позиционируем слева
   z-index: 101;       // выше остальных элементов
+  @include Montserrat-base;
 
   &__title {
     margin-bottom: 16px;
@@ -51,7 +52,7 @@
 /* Для основного контента на десктопе задаём отступ слева, чтобы не перекрывался sidebar */
 @media screen and (min-width: 769px) {
   .catalog-main {
-    margin-left: 240px;  // ширина sidebar + небольшой отступ
+    margin-left: 350px;  // ширина sidebar + небольшой отступ
   }
 }
 

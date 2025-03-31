@@ -3,8 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -72,15 +71,9 @@ h6 {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(238, 27, 85);
   color: rgb(255, 255, 255);
   border: none;
@@ -89,10 +82,7 @@ h6 {
   width: 240px;
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
-  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
   /* Модификатор для центрирования */
   /* Модификатор «ссылка» */
 }
@@ -101,8 +91,7 @@ h6 {
   color: rgb(255, 255, 255);
 }
 .btn:active {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  transform: scale(0.98);
 }
 .btn:disabled, .btn.disabled {
   background-color: #f57a9c;
@@ -124,14 +113,12 @@ h6 {
   border: 1px solid rgb(238, 27, 85);
 }
 .btn.btn--link:active {
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 .btn.btn--transparent {
   display: block;
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: transparent;
   color: rgb(238, 27, 85);
   border: 1px solid rgb(238, 27, 85);
@@ -154,8 +141,7 @@ h6 {
   border-color: #c70f42;
 }
 .btn.btn--white-red:active {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 /***************************
@@ -168,20 +154,13 @@ body {
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   min-height: 100vh;
 }
 
 main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 /*************************************
@@ -251,15 +230,9 @@ main {
 .top-bar .top-bar__inner {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .top-bar .logo img {
   display: block;
@@ -289,18 +262,12 @@ main {
   color: rgb(30, 26, 26);
 }
 .top-bar .header-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 40px;
   /* Гамбургер: по умолчанию скрыт (для десктопа) */
 }
 .top-bar .header-right .messengers {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 16px;
 }
@@ -323,31 +290,21 @@ main {
   width: 32px;
   height: 2px;
   margin: 6px 0;
-  -webkit-transition: opacity 0.4s ease, -webkit-transform 0.4s ease;
-  transition: opacity 0.4s ease, -webkit-transform 0.4s ease;
   transition: transform 0.4s ease, opacity 0.4s ease;
-  transition: transform 0.4s ease, opacity 0.4s ease, -webkit-transform 0.4s ease;
-  -webkit-transform-origin: center;
-          transform-origin: center;
+  transform-origin: center;
 }
 .top-bar .header-right .hamb.active .bar:nth-child(1) {
-  -webkit-transform: translateY(8px) rotate(45deg);
-          transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 .top-bar .header-right .hamb.active .bar:nth-child(2) {
   opacity: 0;
 }
 .top-bar .header-right .hamb.active .bar:nth-child(3) {
-  -webkit-transform: translateY(-8px) rotate(-45deg);
-          transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 .top-bar .search {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 10px;
 }
 .top-bar .search .cataloge_btn {
@@ -381,7 +338,6 @@ main {
   background-color: transparent !important;
 }
 .top-bar .search .input_search:-webkit-autofill, .top-bar .search .input_search:-webkit-autofill:hover, .top-bar .search .input_search:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
   box-shadow: 0 0 0 1000px transparent inset !important;
   background-color: transparent !important;
   -webkit-text-fill-color: inherit !important;
@@ -411,21 +367,13 @@ main {
 .main-nav .nav__inner {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 0;
 }
 .main-nav .menu {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
   margin: 0;
@@ -447,7 +395,6 @@ main {
 .banner {
   width: 100%;
   min-height: 500px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../header/banner.jpeg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../header/banner.jpeg");
   background-size: cover;
   background-position: center;
@@ -461,8 +408,7 @@ main {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 90%;
   padding: 20px;
 }
@@ -493,9 +439,7 @@ main {
     padding-right: 4%;
   }
   .top-bar .top-bar__inner {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .top-bar .contact {
     display: none;
@@ -532,10 +476,7 @@ main {
     right: 0;
     top: 60px;
     background-color: rgb(255, 255, 255);
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     border: 2px solid rgb(238, 27, 85);
     padding: 10px;
     z-index: 1000;
@@ -544,8 +485,6 @@ main {
     margin: 5px 0;
   }
   .main-nav .nav__inner .menu.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .banner {
@@ -615,8 +554,7 @@ main {
 * АНИМАЦИЯ БАРОВ ГАМБУРГЕРА
 *************************************/
 .bar.top {
-  -webkit-transform: rotate(45deg) translate(6.5px, 6px);
-          transform: rotate(45deg) translate(6.5px, 6px);
+  transform: rotate(45deg) translate(6.5px, 6px);
 }
 
 .bar.middle {
@@ -624,8 +562,7 @@ main {
 }
 
 .bar.bottom {
-  -webkit-transform: rotate(-45deg) translate(6.5px, -6px);
-          transform: rotate(-45deg) translate(6.5px, -6px);
+  transform: rotate(-45deg) translate(6.5px, -6px);
 }
 
 .loupe {
@@ -658,12 +595,8 @@ main {
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   z-index: 1000;
 }
 
@@ -700,7 +633,6 @@ main {
 .product {
   padding: 8px;
   border-bottom: 1px solid #ddd;
-  -webkit-transition: background 0.3s;
   transition: background 0.3s;
 }
 .product:hover {
@@ -710,12 +642,9 @@ main {
   display: grid;
   grid-template-columns: 30% auto;
   grid-template-rows: 30% auto;
-  -webkit-column-gap: 0.5rem;
-     -moz-column-gap: 0.5rem;
-          column-gap: 0.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  align-items: center;
   justify-items: center;
   text-align: left;
 }
@@ -799,8 +728,7 @@ main {
 .footer {
   margin-top: 100px;
   width: 100%;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   padding-left: 8px;
   padding-right: 8px;
   font-family: "Montserrat", sans-serif;
@@ -848,36 +776,23 @@ main {
   margin: 0;
 }
 .footer__socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   gap: 0.7rem;
   margin-top: 10px;
 }
 @media screen and (max-width: 440px) {
   .footer__socials {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
 .footer__socials-link {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: auto;
 }
 .footer__socials-text {
@@ -933,9 +848,8 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "contacts address" "policy tax-info";
     row-gap: 0.2rem;
-    -webkit-column-gap: 20rem;
-       -moz-column-gap: 20rem;
-            column-gap: 20rem;
+    -moz-column-gap: 20rem;
+         column-gap: 20rem;
   }
   .footer__contacts {
     justify-self: end;
@@ -950,14 +864,12 @@ main {
   .footer__policy {
     justify-self: end;
     text-align: left;
-    -ms-flex-item-align: start;
-        align-self: start;
+    align-self: start;
   }
   .footer__tax-info {
     justify-self: start;
     text-align: right;
-    -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
   }
 }
 
@@ -974,24 +886,15 @@ main {
   margin-bottom: 24px;
 }
 .contacts__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 24px;
   max-width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .contacts__info {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
+  flex: 0 0 30%;
 }
 .contacts__info p {
   font-family: "Montserrat", sans-serif;
@@ -1006,12 +909,8 @@ main {
 }
 .contacts__info p a {
   cursor: pointer;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: underline;
 }
 .contacts__info p a:hover {
@@ -1021,9 +920,7 @@ main {
   display: block;
 }
 .contacts__map {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 70%;
-          flex: 0 0 70%;
+  flex: 0 0 70%;
   overflow: hidden;
 }
 .contacts__map iframe,
@@ -1038,10 +935,7 @@ main {
     padding-right: 4%;
   }
   .contacts__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .contacts__info, .contacts__map {
     width: 100%;
@@ -1085,15 +979,9 @@ main {
 
 .topContainer {
   padding: 2rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: baseline;
+  justify-content: space-between;
   margin-top: 120px;
 }
 .topContainer h2 {
@@ -1104,12 +992,8 @@ main {
   background-color: rgb(255, 255, 255);
   color: #cfcfcf;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  align-items: end;
 }
 .topContainer #goBack:hover {
   color: rgb(238, 27, 85);
@@ -1128,20 +1012,14 @@ main {
 }
 
 .cartItems {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  flex-flow: column nowrap;
   gap: 1.5rem;
 }
 .cartItems #emptyMsg {
   padding: 1rem 0;
   text-align: center;
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   font-size: 1.1rem;
   color: gray;
 }
@@ -1149,13 +1027,8 @@ main {
   color: rgb(245, 210, 88);
 }
 .cartItems #cartList {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  flex-flow: column nowrap;
 }
 .cartItems #cartList li:first-child {
   border-top: 2px solid gray;
@@ -1167,9 +1040,7 @@ main {
   padding: 10px 0;
   display: grid;
   grid-template-columns: 20% 1fr 15% 15% 12%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border-top: 1px solid gray;
   border-bottom: 0.5px solid gray;
 }
@@ -1224,12 +1095,8 @@ main {
 }
 .cartItems #cartList .cartItem .itemCounter {
   justify-self: end;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 10px;
   border: 1px solid rgb(30, 26, 26);
   border-radius: 6px;
@@ -1237,8 +1104,7 @@ main {
 }
 @media screen and (max-width: 440px) {
   .cartItems #cartList .cartItem .itemCounter {
-    -ms-flex-item-align: start;
-        align-self: start;
+    align-self: start;
     justify-self: start;
   }
 }
@@ -1248,8 +1114,7 @@ main {
   font-size: 18px;
   width: 30px;
   height: 30px;
-  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   font-weight: bold;
 }
@@ -1278,8 +1143,7 @@ main {
 }
 @media screen and (max-width: 440px) {
   .cartItems #cartList .cartItem .price {
-    -ms-flex-item-align: start;
-        align-self: start;
+    align-self: start;
     justify-self: end;
   }
 }
@@ -1302,9 +1166,7 @@ main {
   display: grid;
   grid-template-columns: 70% 5rem;
   grid-template-rows: repeat(3, 1fr);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .orderDetails h3 {
   grid-column: 1/3;
@@ -1320,16 +1182,9 @@ main {
 
 #orderForm {
   margin-top: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-flow: column nowrap;
+  align-items: flex-start;
   gap: 0.2rem;
   margin-bottom: 100px;
 }
@@ -1359,7 +1214,6 @@ main {
 #orderForm textarea:-webkit-autofill,
 #orderForm textarea:-webkit-autofill:hover,
 #orderForm textarea:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
   box-shadow: 0 0 0 1000px transparent inset !important;
   background-color: transparent !important;
   -webkit-text-fill-color: inherit !important;
@@ -1384,13 +1238,8 @@ main {
 }
 #orderForm #deliveryOptions {
   margin-bottom: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  flex-flow: column nowrap;
   gap: 0.3rem;
   font-size: 1.1rem;
   font-weight: 600;
@@ -1399,12 +1248,9 @@ main {
   display: grid;
   grid-template-columns: 20px 1fr;
   grid-template-rows: 1fr;
-  -webkit-column-gap: 0.4rem;
-     -moz-column-gap: 0.4rem;
-          column-gap: 0.4rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -moz-column-gap: 0.4rem;
+       column-gap: 0.4rem;
+  align-items: center;
   font-size: 0.8rem;
   font-weight: 400;
 }
@@ -1418,8 +1264,7 @@ main {
   height: 20px;
   content: none;
   outline: none;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 4px;
-          box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 4px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 4px;
 }
 #orderForm #deliveryOptions label input[type=radio]:checked {
   -webkit-appearance: none;
@@ -1445,8 +1290,6 @@ main {
 }
 #orderForm .agreePolicy {
   margin-bottom: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 0.5rem;
   width: 60%;
@@ -1483,8 +1326,7 @@ main {
   height: 20px;
   content: none;
   outline: none;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 4px;
-          box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 4px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 4px;
 }
 #orderForm .agreePolicy input[type=checkbox]:checked {
   -webkit-appearance: none;
@@ -1507,9 +1349,7 @@ main {
   display: grid;
   grid-template-columns: 70% 5rem;
   grid-template-rows: repeat(3, 4fr);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 #orderForm .orderFinal h3 {
   grid-column: 1/3;
@@ -1528,14 +1368,9 @@ main {
 }
 #orderForm .formBtns {
   margin: 1.5rem 0;
-  -ms-flex-item-align: center;
-      align-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-self: center;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 #orderForm .formBtns button {
   margin: 0 0.5rem;
@@ -1572,12 +1407,8 @@ main {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .popup-content {
@@ -1590,15 +1421,9 @@ main {
   text-align: center;
   font-size: 1rem;
   border-radius: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .popup-content {
@@ -1620,8 +1445,6 @@ main {
 }
 
 .show-popup {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1652,28 +1475,18 @@ main {
 }
 
 .product-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  align-items: stretch;
   gap: 32px;
   margin-bottom: 40px;
 }
 .product-card .product-images {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   max-width: 600px;
 }
 .product-card .product-images .main-image {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   height: 100%;
 }
 .product-card .product-images .main-image img {
@@ -1685,19 +1498,10 @@ main {
   border-radius: 8px;
 }
 .product-card .product-info {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .product-card .product-info .product-price {
   font-family: "Montserrat", sans-serif;
@@ -1762,8 +1566,6 @@ main {
   margin-bottom: 16px;
 }
 .similar-products .similar-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 24px;
 }
@@ -1826,10 +1628,7 @@ main {
     padding-right: 8px;
   }
   .product-card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .btn {
     width: 100%;
@@ -1842,21 +1641,15 @@ main {
  * Контейнер для счётчика и кнопки
  ***************************************************/
 .order-controls {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  align-items: end;
   gap: 8px;
   margin-bottom: 24px;
   color: #dadada;
 }
 .order-controls .quantity-block {
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border: 1px solid rgb(238, 27, 85);
   border-radius: 8px;
   padding: 0 8px;
@@ -1886,16 +1679,13 @@ main {
   display: none;
 }
 .order-controls.active .quantity-block {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
 .catalogue {
   margin-top: 4rem;
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-left: 5.2%;
   padding-right: 5.2%;
 }
@@ -1920,19 +1710,13 @@ main {
 .catalogue__row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  -webkit-column-gap: 3rem;
-     -moz-column-gap: 3rem;
-          column-gap: 3rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
   row-gap: 1rem;
 }
 .catalogue__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-top: 2rem;
 }
 .catalogue__link {
@@ -1951,7 +1735,6 @@ main {
 .catalogue__image {
   width: 100%;
   max-width: 360px;
-  max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
 }
@@ -1978,9 +1761,8 @@ main {
     grid-template-columns: repeat(2, 1fr);
     padding-left: 0;
     padding-right: 0;
-    -webkit-column-gap: 1.5rem;
-       -moz-column-gap: 1.5rem;
-            column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
     row-gap: 0.2rem;
   }
   .catalogue__image {
@@ -2023,14 +1805,10 @@ main {
   background-color: #fff;
   text-align: center;
   padding: 1rem;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 .popular__item:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
 }
 .popular__image img {
   width: 100%;
@@ -2073,8 +1851,7 @@ main {
   }
 }
 .delivery {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   padding-top: 4rem;
   padding-left: 5.2%;
   padding-right: 5.2%;
@@ -2183,13 +1960,8 @@ main {
 }
 @media screen and (max-width: 440px) {
   .about__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .about__description {
     font-size: 0.8rem;
@@ -2221,35 +1993,22 @@ main {
   font-size: 40px;
 }
 .reviews__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 1rem;
   max-width: 960px;
   margin: 0 auto;
 }
 .reviews__track-wrapper {
   overflow: hidden;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 .reviews__track {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 .reviews__card {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  flex: 0 0 50%;
   padding: 0 0.5rem;
 }
 .reviews__card img {
@@ -2257,8 +2016,7 @@ main {
   height: auto;
   border-radius: 12px;
   display: block;
-  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .reviews__arrow {
   background: none;
@@ -2266,7 +2024,6 @@ main {
   font-size: 2.5rem;
   cursor: pointer;
   color: #888;
-  -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 .reviews__arrow:hover:not(:disabled) {
@@ -2284,9 +2041,7 @@ main {
 }
 @media screen and (max-width: 440px) {
   .reviews__card {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    flex: 0 0 100%;
   }
   .reviews__wrapper {
     max-width: 100%;
@@ -2299,8 +2054,6 @@ main {
 }
 /* ========== Desktop Styles ========== */
 .page-catalog {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 160px;
   margin-bottom: 140px;
@@ -2328,6 +2081,8 @@ main {
   top: 157px;
   left: 10%;
   z-index: 101;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
 }
 .catalog-sidebar__title {
   margin-bottom: 16px;
@@ -2341,7 +2096,6 @@ main {
   cursor: pointer;
   padding: 8px 0;
   border-bottom: 1px solid #ccc;
-  -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
   font-size: 18px;
 }
@@ -2353,21 +2107,14 @@ main {
 /* Для основного контента на десктопе задаём отступ слева, чтобы не перекрывался sidebar */
 @media screen and (min-width: 769px) {
   .catalog-main {
-    margin-left: 240px;
+    margin-left: 350px;
   }
 }
 /* --- Блок с основным контентом (карточки и пилюли) --- */
 .catalog-main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 /* --- Пилюли с категориями (базово скрыты на десктопе) --- */
@@ -2391,12 +2138,9 @@ main {
   padding: 8px 16px;
   background-color: #fff;
   cursor: pointer;
-  -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
   font-family: "Montserrat", sans-serif;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 .category-pills .pill:hover {
   background-color: #f3f3f3;
@@ -2420,22 +2164,13 @@ main {
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: #fff;
-  -webkit-transition: -webkit-box-shadow 0.2s;
-  transition: -webkit-box-shadow 0.2s;
   transition: box-shadow 0.2s;
-  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
 }
 .product-card-mini:hover {
-  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 .product-card-mini .product-image {
   width: 100%;
@@ -2446,16 +2181,9 @@ main {
 }
 .product-card-mini .product-info {
   padding: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex-direction: column;
+  flex: 1;
   margin-top: auto;
 }
 .product-card-mini .product-info h3 {
@@ -2467,48 +2195,35 @@ main {
 .product-card-mini .product-info .product-price {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   font-size: 24px;
   color: rgb(30, 26, 26);
   margin-bottom: 16px;
   margin-top: auto;
 }
 .product-card-mini .product-info .order-controls-mini {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 8px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .product-card-mini .product-info .order-controls-mini .product-btn {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   padding: 16px 16px;
   border-radius: 8px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
 .product-card-mini .product-info .order-controls-mini .product-btn:focus {
   outline: none;
-  -webkit-box-shadow: 0 0 5px rgba(238, 27, 85, 0.5);
-          box-shadow: 0 0 5px rgba(238, 27, 85, 0.5);
+  box-shadow: 0 0 5px rgba(238, 27, 85, 0.5);
 }
 .product-card-mini .product-info .order-controls-mini .product-btn:active {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  transform: scale(0.95);
 }
 .product-card-mini .product-info .order-controls-mini .btn-details {
   background-color: #fff;
@@ -2529,24 +2244,16 @@ main {
   color: #fff;
 }
 .product-card-mini .product-info .order-controls-mini .quantity-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   border: 1px solid #ee1b55;
   border-radius: 8px;
   padding: 9px 11px;
   color: #ee1b55;
   font-size: 14px;
   max-width: 240px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 @media screen and (max-width: 768px) {
   .product-card-mini .product-info .order-controls-mini .quantity-block {
@@ -2593,8 +2300,6 @@ main {
   }
   /* Фиксируем пилюли */
   .category-pills {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
     display: flex !important; /* принудительно показываем пилюли */
     position: fixed;
     top: 101px; /* отступ от верха; при необходимости скорректируйте */
@@ -2606,8 +2311,7 @@ main {
     padding-right: 7%;
     overflow-x: auto; /* позволяет скроллить по горизонтали */
     overflow-y: hidden; /* скрывает вертикальный выход */
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     /* Добавляем белый градиент справа */
   }
   .category-pills::after {
@@ -2625,12 +2329,9 @@ main {
     padding: 8px 16px;
     background-color: #fff;
     cursor: pointer;
-    -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
     font-family: "Montserrat", sans-serif;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
   }
   .category-pills .pill:hover {
     background-color: #f3f3f3;
@@ -2655,13 +2356,8 @@ main {
     padding-right: 8px;
   }
   .order-controls {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    flex-direction: column;
+    align-items: stretch;
   }
   .order-controls .product-btn {
     width: 100%;
@@ -2684,9 +2380,7 @@ body {
 }
 
 main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 main .policy-title {
   font-size: 24px;
@@ -2712,12 +2406,7 @@ main .policy-text p {
 
 .go-back {
   padding: 2rem 0;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-shrink: 0;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
