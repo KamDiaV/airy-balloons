@@ -59,7 +59,13 @@
 
 ## Команда
 
-[![Contributors](https://contrib.rocks/image?repo=KamDiaV/airy-balloons)](https://github.com/KamDiaV/airy-balloons/graphs/contributors)
+<a href="https://github.com/KamDiaV/airy-balloons/graphs/contributors">
+  <img
+    src="https://contrib.rocks/image?repo=KamDiaV/airy-balloons&columns=8"
+    alt="Contributors"
+    width="216"
+  />
+</a>
 
 ---
 
