@@ -63,7 +63,7 @@
   <img
     src="https://contrib.rocks/image?repo=KamDiaV/airy-balloons&columns=8"
     alt="Contributors"
-    width="216"
+    width="264"
   />
 </a>
 
